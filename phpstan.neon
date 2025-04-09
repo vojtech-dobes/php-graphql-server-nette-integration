@@ -1,0 +1,15 @@
+includes:
+  - phpstan-baseline.neon
+  - vendor/spaze/phpstan-disallowed-calls/extension.neon
+
+parameters:
+  disallowedFunctionCalls:
+    - function:
+        - 'dump()'
+        - 'var_dump()'
+      message: 'avoid committing debug calls'
+
+  level: 8
+  paths:
+    - src
+    - tests
