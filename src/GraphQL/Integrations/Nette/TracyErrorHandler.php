@@ -29,4 +29,15 @@ final class TracyErrorHandler implements GraphQL\ErrorHandler
 		Tracy\Debugger::log($e, Tracy\Debugger::EXCEPTION);
 	}
 
+
+
+	public function handleSerializeScalarError(
+		Throwable $e,
+		GraphQL\FieldSelection $fieldSelection,
+		mixed $scalarValue,
+	): void
+	{
+		Tracy\Debugger::log($e, Tracy\Debugger::EXCEPTION);
+	}
+
 }

@@ -934,12 +934,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vojtech-dobes/php-graphql-server.git",
-                "reference": "e118aa6e7b6b2320e469704405d07bc7899585ba"
+                "reference": "cea9c45ab9c35b1d14380b00dc8ebc79adabfb01"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vojtech-dobes/php-graphql-server/zipball/e118aa6e7b6b2320e469704405d07bc7899585ba",
-                "reference": "e118aa6e7b6b2320e469704405d07bc7899585ba",
+                "url": "https://api.github.com/repos/vojtech-dobes/php-graphql-server/zipball/cea9c45ab9c35b1d14380b00dc8ebc79adabfb01",
+                "reference": "cea9c45ab9c35b1d14380b00dc8ebc79adabfb01",
                 "shasum": ""
             },
             "require": {
@@ -983,7 +983,7 @@
                 "issues": "https://github.com/vojtech-dobes/php-graphql-server/issues",
                 "source": "https://github.com/vojtech-dobes/php-graphql-server/tree/master"
             },
-            "time": "2025-04-28T11:42:18+00:00"
+            "time": "2025-04-29T15:53:59+00:00"
         }
     ],
     "aliases": [],
