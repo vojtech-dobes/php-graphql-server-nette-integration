@@ -12,6 +12,9 @@ final class FailFieldResolver implements Vojtechdobes\GraphQL\FieldResolver
 
 
 
+	/**
+	 * @throws Exception
+	 */
 	public function resolveField(
 		mixed $objectValue,
 		Vojtechdobes\GraphQL\FieldSelection $field,
@@ -62,6 +65,7 @@ function configureGraphQLService(array $config): Vojtechdobes\GraphQL\Service
 		], $config),
 	]);
 
+	// @phpstan-ignore missingType.checkedException
 	return $configurator
 		->createContainer()
 		->getByType(Vojtechdobes\GraphQL\Service::class);

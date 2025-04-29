@@ -10,6 +10,14 @@ parameters:
         - 'var_dump()'
       message: 'avoid committing debug calls'
 
+  exceptions:
+    check:
+      missingCheckedExceptionInThrows: true
+      tooWideThrowType: true
+
+    uncheckedExceptionClasses:
+      - LogicException
+
   level: 8
   paths:
     - src

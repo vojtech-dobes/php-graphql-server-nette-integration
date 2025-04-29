@@ -26,6 +26,7 @@ final class ContainerFieldResolverProvider implements GraphQL\FieldResolverProvi
 
 	/**
 	 * @return GraphQL\FieldResolver<mixed, mixed, array<string, mixed>>
+	 * @throws Nette\DI\MissingServiceException
 	 */
 	public function getFieldResolver(string $fieldName): GraphQL\FieldResolver
 	{
