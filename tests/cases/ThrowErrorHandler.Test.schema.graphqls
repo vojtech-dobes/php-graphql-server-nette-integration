@@ -1,0 +1,12 @@
+interface I {
+	b: String
+}
+
+type O implements I {
+	b: String
+}
+
+type Query {
+	a: String
+	i: I
+}

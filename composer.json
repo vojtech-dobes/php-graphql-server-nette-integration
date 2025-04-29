@@ -1,0 +1,42 @@
+{
+	"authors": [
+		{
+			"name": "Vojtěch Dobeš",
+			"homepage": "https://vojtechdobes.com"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"Vojtechdobes\\GraphQL\\": "src/GraphQL"
+		}
+	},
+	"config": {
+		"sort-packages": true
+	},
+	"keywords": [
+		"api",
+		"graphql",
+		"nette"
+	],
+	"license": [
+		"BSD-3-Clause"
+	],
+	"name": "vojtech-dobes/php-graphql-server-nette-integration",
+	"require": {
+		"php": "~8.4"
+	},
+	"require-dev": {
+		"nette/bootstrap": "^3.2.5",
+		"nette/di": "^3.2.4",
+		"nette/tester": "^2.5.4",
+		"phpstan/phpstan": "^2.1.13",
+		"spaze/phpstan-disallowed-calls": "^4.5.0",
+		"tracy/tracy": "^2.10.10",
+		"vojtech-dobes/php-grammar-processing": "dev-master@dev",
+		"vojtech-dobes/php-graphql-server": "dev-master@dev"
+	},
+	"scripts": {
+		"phpstan": "phpstan analyse",
+		"test": "composer dump-autoload && tester tests -o console-lines --cider --setup=tests/setup.php -C"
+	}
+}

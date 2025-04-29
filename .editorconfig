@@ -1,0 +1,14 @@
+root = true
+
+[*]
+end_of_line = lf
+indent_style = tab
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.{md,neon,yml}]
+indent_size = 2
+indent_style = space
+
+[phpstan-baseline.neon]
+indent_style = tab
