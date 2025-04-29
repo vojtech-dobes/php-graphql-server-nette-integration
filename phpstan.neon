@@ -1,5 +1,6 @@
 includes:
   - phpstan-baseline.neon
+  - vendor/phpstan/phpstan-strict-rules/rules.neon
   - vendor/spaze/phpstan-disallowed-calls/extension.neon
 
 parameters:

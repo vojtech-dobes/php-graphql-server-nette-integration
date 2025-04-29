@@ -30,6 +30,7 @@
 		"nette/di": "^3.2.4",
 		"nette/tester": "^2.5.4",
 		"phpstan/phpstan": "^2.1.13",
+		"phpstan/phpstan-strict-rules": "^2.0.4",
 		"spaze/phpstan-disallowed-calls": "^4.5.0",
 		"tracy/tracy": "^2.10.10",
 		"vojtech-dobes/php-grammar-processing": "dev-master@dev",
