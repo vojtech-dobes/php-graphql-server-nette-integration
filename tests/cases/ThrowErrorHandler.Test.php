@@ -26,6 +26,9 @@ Tracy\Debugger::setLogger($logger);
 final class IAbstractTypeResolver implements Vojtechdobes\GraphQL\AbstractTypeResolver
 {
 
+	/**
+	 * @throws Exception
+	 */
 	public function resolveAbstractType(mixed $objectValue): string
 	{
 		throw new Exception("Something bad happened when resolving abstract type");

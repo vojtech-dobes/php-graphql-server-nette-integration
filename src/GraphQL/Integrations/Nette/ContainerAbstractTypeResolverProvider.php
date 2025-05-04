@@ -24,6 +24,9 @@ final class ContainerAbstractTypeResolverProvider implements GraphQL\AbstractTyp
 
 
 
+	/**
+	 * @throws Nette\DI\MissingServiceException
+	 */
 	public function getAbstractTypeResolver(string $abstractTypeName): GraphQL\AbstractTypeResolver
 	{
 		return $this->dic->getService("{$this->extensionName}.abstractType.{$abstractTypeName}"); // @phpstan-ignore return.type
