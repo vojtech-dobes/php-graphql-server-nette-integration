@@ -21,6 +21,7 @@ Tester\Assert::same(
 	$service->executeRequest(
 		new Vojtechdobes\GraphQL\Request(
 			$service->parseExecutableDocument('{ a __type(name: "Query") { fields { name } } }'),
+			null,
 			[],
 		),
 	)->wait()->toResponse(),
