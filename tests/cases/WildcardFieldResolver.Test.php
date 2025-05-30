@@ -5,22 +5,21 @@ require_once __DIR__ . '/../bootstrap.php';
 
 $service = configureGraphQLService([
 	'fieldResolvers' => [
-		'Query.a' => new Nette\DI\Definitions\Statement(StaticFieldResolver::class, ['A']),
+		'Query' => new Nette\DI\Definitions\Statement(StaticFieldResolver::class, ['Dude']),
 	],
-	'schemaPath' => __DIR__ . '/Plain.Test.schema.graphqls',
+	'schemaPath' => __DIR__ . '/WildcardFieldResolver.Test.schema.graphqls',
 ]);
 
 
 Tester\Assert::same(
 	[
 		'data' => [
-			'a' => 'A',
-			'__type' => null,
+			'a' => 'Dude',
 		],
 	],
 	$service->executeRequest(
 		new Vojtechdobes\GraphQL\Request(
-			$service->parseExecutableDocument('{ a __type(name: "Query") { fields { name } } }'),
+			$service->parseExecutableDocument('{ a }'),
 			null,
 			[],
 		),

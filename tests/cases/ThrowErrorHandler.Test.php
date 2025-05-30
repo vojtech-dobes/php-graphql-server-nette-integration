@@ -69,6 +69,7 @@ Tester\Assert::same(
 	$service->executeRequest(
 		new Vojtechdobes\GraphQL\Request(
 			$service->parseExecutableDocument('{ a i { b } }'),
+			null,
 			[],
 		),
 	)->wait()->toResponse(),
