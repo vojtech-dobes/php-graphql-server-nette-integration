@@ -38,6 +38,17 @@ final class ContainerFieldResolverProvider implements GraphQL\FieldResolverProvi
 
 
 
+	public function getFieldResolverClass(string $fieldName): ?string
+	{
+		try {
+			return $this->dic->getServiceType("{$this->extensionName}.field.{$fieldName}"); // @phpstan-ignore return.type
+		} catch (Nette\DI\MissingServiceException) {
+			return null;
+		}
+	}
+
+
+
 	public function listSupportedFieldNames(): never
 	{
 		throw new LogicException(
