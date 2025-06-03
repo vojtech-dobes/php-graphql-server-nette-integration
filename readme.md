@@ -1,4 +1,4 @@
-# [PHP GraphQL Server](https://github.com/vojtech-dobes/php-graphql-server) integration for Nette Framework
+# [PHP GraphQL Server](https://github.com/vojtech-dobes/php-graphql-server) integration with Nette Framework
 
 ![Checks](https://github.com/vojtech-dobes/php-graphql-server-nette-integration/actions/workflows/checks.yml/badge.svg?branch=master&event=push)
 
