@@ -3,14 +3,14 @@ name: checks
 on:
   - push
 
+env:
+  COMPOSER_NO_INTERACTION: "1"
+
 jobs:
   static_analysis:
     name: Static analysis
 
     runs-on: ubuntu-latest
-
-    env:
-      COMPOSER_NO_INTERACTION: "1"
 
     steps:
       - uses: actions/checkout@v4
@@ -43,9 +43,6 @@ jobs:
       fail-fast: false
 
     runs-on: ${{ matrix.os }}
-
-    env:
-      COMPOSER_NO_INTERACTION: "1"
 
     steps:
       - uses: actions/checkout@v4
