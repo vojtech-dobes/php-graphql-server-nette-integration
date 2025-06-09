@@ -31,7 +31,7 @@ final class IAbstractTypeResolver implements Vojtechdobes\GraphQL\AbstractTypeRe
 	 */
 	public function resolveAbstractType(mixed $objectValue): string
 	{
-		throw new Exception("Something bad happened when resolving abstract type");
+		throw new Exception('Something bad happened when resolving abstract type');
 	}
 
 }
