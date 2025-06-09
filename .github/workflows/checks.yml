@@ -7,6 +7,24 @@ env:
   COMPOSER_NO_INTERACTION: "1"
 
 jobs:
+  format:
+    name: Code style
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.4'
+          coverage: none
+
+      - run: composer install --ansi --no-progress --prefer-dist
+
+      - name: Run PHP_Codesniffer
+        run: vendor/bin/phpcs
+
   static_analysis:
     name: Static analysis
 

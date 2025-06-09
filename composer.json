@@ -11,6 +11,9 @@
 		}
 	},
 	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": false
+		},
 		"sort-packages": true
 	},
 	"keywords": [
@@ -33,6 +36,7 @@
 		"phpstan/phpstan-strict-rules": "^2.0.4",
 		"spaze/phpstan-disallowed-calls": "^4.5.0",
 		"tracy/tracy": "^2.10.10",
+		"vojtech-dobes/php-codestyle": "~0.2.0",
 		"vojtech-dobes/php-grammar-processing": "dev-master@dev",
 		"vojtech-dobes/php-graphql-server": "dev-master@dev"
 	},
